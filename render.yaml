@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: what-if-storyteller
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
